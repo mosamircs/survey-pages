@@ -1,0 +1,111 @@
+.progess-bar{
+    float: right;
+    margin-left: 5554px;
+}
+.big-text{
+    font-size: 24px;
+}
+.checkbox-style{
+    width: 25px;
+    height: 25px;
+}
+.input-style{
+    border-radius: 0.5em;
+    width:75px;
+    height:35px;
+    background-color: #D2D2D2;
+}
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+  }
+  
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 255px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+  
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+  }
+  
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+  }
+.larger-text{
+    font-size: larger;
+}
+.blue-text{
+    color:#0092D4;
+    text-decoration: underline;
+}
+table,td {
+    border-collapse: collapse;
+    text-align: center;
+}
+.align-it{
+    margin-left: auto;
+    margin-right: auto;
+    width: 8em
+}
+td.grayed{
+    padding: 8px;
+    background-color: #DFE4EA;
+}
+table.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 270px ;
+    margin-right: 300px ;
+}
+td.spaced{
+    border-top-style: hidden;
+    border-left-style: hidden;
+}
+td.spaced2{
+    border-left-style: hidden;
+    border-bottom-style: hidden
+}
+.container{
+    position:relative;
+
+}
+.container .Loading{
+    position:relative;
+    width:500px;
+    height:22px;
+    background:rgba(255,255,255,.05);
+    border-radius:25px;
+    display:flex;
+    align-items:center;
+    border:5px solid #1b1f23;
+}
+.container .Loading span{
+    position:absolute;
+    width:0%;
+    height:100%;
+    background-color:#0fbcf9;
+    border-radius:25px;
+}
+.container i{
+    color:#fff;
+    font-size:5em;
+}
+div.containbutton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+div.containbutton button {
+    margin: 0;
+    background-color: #0092D4;
+    border-radius: 12px;
+    padding:10px;
+}

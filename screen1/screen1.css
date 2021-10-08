@@ -1,0 +1,126 @@
+    .progess-bar{
+        float: right;
+        margin-left: 5554px;
+    }
+    .big-text{
+        margin:25px;
+    }
+    .small-text{
+        margin:50px
+    }
+    table,td {
+        border-collapse: collapse;
+        text-align: center;
+    }
+    .tooltip {
+        position: relative;
+        display: inline-block;
+        border-bottom: 1px dotted black;
+      }
+      
+      .tooltip .tooltiptext {
+        visibility: hidden;
+        width: 255px;
+        background-color: black;
+        color: #fff;
+        text-align: center;
+        border-radius: 6px;
+        padding: 5px 0;
+      
+        /* Position the tooltip */
+        position: absolute;
+        z-index: 1;
+      }
+      
+      .tooltip:hover .tooltiptext {
+        visibility: visible;
+      }
+    .align-it{
+        margin-left: auto;
+        margin-right: auto;
+        width: 8em
+    }
+    td.grayed{
+       background-color: #DFE4EA;
+    }
+    table.center {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 270px ;
+        margin-right: 300px ;
+    }
+    td.spaced{
+        border-top-style: hidden;
+        border-left-style: hidden;
+    }
+    td.spaced2{
+        border-left-style: hidden;
+        border-bottom-style: hidden
+    }
+    .container{
+        width: 50%;
+        padding: 10px;
+        alignment: left;
+    }
+    .blue-text{
+        color:#0092D4;
+        text-decoration: underline;
+    }
+
+    .container{
+        position:relative;
+
+    }
+    .container .Loading{
+        position:relative;
+        width:500px;
+        height:22px;
+        background:rgba(255,255,255,.05);
+        border-radius:25px;
+        display:flex;
+        align-items:center;
+        border:5px solid #1b1f23;
+    }
+    .container .Loading span{
+        position:absolute;
+        width:0%;
+        height:100%;
+        background-color:#0fbcf9;
+        border-radius:25px;
+    }
+    .container i{
+        color:#fff;
+        font-size:5em;
+    }
+    td.radio{
+        size: 50px;
+    }
+
+    .child{
+        display: flex;
+        justify-content: center;
+    }
+
+    div.containbutton {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    div.containbutton button {
+        margin: 0;
+        background-color: #0092D4;
+        border-radius: 12px;
+        padding:10px;
+    }
+    div.cell{
+        padding:20px;
+        margin-bottom: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border:1px solid lightgray;
+        margin-left: 400px;
+        margin-right: 300px;
+        font-weight:bold ;
+    }

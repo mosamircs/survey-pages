@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Screen 2</title>
+    <link rel="stylesheet" href="screen2.css">
+    <script src="screen2.js"></script>
+</head>
+
+<body>
+    <div class="progess-bar">
+        <div class="container">
+            <div class="Loading">
+                <span data-charge='2'></span>
+            </div>
+            <span>2</span>
+        </div>
+    </div>
+    <div class="big-text">
+        <div class="text-black">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet dolor inventore <div
+                class="tooltip blue-text">Lorem ipsum dolor sit am<span class="tooltiptext">Lorem,
+                    ipsum dolor sit amet consectetur adipisicing elit. Incidunt ex beatae in quisquam
+                    repellendus deserunt necessitatibus assumenda, facilis minima. Commodi necessitatibus
+                    sit ducimus at quia! </span></div>
+            </span> optio quibusdam velit, vero.
+        </div>
+        <div id="textChangeColor"style="font-size:20px;color:black;margin-right: 45px;">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet eaque fugit hic inventore, ipsam itaque
+            minima natus nobis nulla praesentium recusandae repellendus tempore vel, vero.
+        </div>
+    </div>
+    <!--TODo on hover blue text should show tool tip in black box with white text-->
+
+    <div class="main-table">
+        <table class="center">
+            <tr style="font-size: larger;">
+                <td class="spaced"></td>
+                <td class="grayed" style="padding:15px;text-align: center;"><strong>Used in the last 12 months</strong>
+                </td>
+                <td class="grayed" style="padding:1.5px"><strong>percentage of your investment</strong></td>
+            </tr>
+            <tr class="larger-text">
+                <td class="grayed" style="text-align: left;">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Doloribus Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet dolor inventore <div
+                        class="tooltip blue-text">Lorem ipsum dolor sit am<span class="tooltiptext">Lorem,
+                            ipsum dolor sit amet consectetur adipisicing elit. Incidunt ex beatae in quisquam
+                            repellendus deserunt necessitatibus assumenda, facilis minima. Commodi necessitatibus
+                            sit ducimus at quia! </span></div>
+                    </span> facere.</td>
+                <td><input id="checkBox1"type="checkBox"onclick="enableTextInput(`checkBox1`,`textBox1`)" class="checkbox-style"></td>
+                <td><input type="number" disabled class="input-style"id ="textBox1"><span>%</span></td>
+            </tr>
+            <tr class="larger-text">
+                <td class=" grayed" style="text-align: left;">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Maxime magnam maiores a distinctio esse modi.</td>
+                <td><input id="checkBox2"type="checkbox" class="checkbox-style"onclick="enableTextInput(`checkBox2`,`textBox2`)" ></td>
+                <td><input id ="textBox2"type="number" disabled class="input-style"><span>%</span></td>
+            </tr>
+            <tr class="larger-text">
+                <td class="grayed" style="text-align: left;">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Sint, aliquam!</td>
+                <td><input id="checkBox3" type="checkbox" class="checkbox-style"onclick="enableTextInput(`checkBox3`,`textBox3`)" ></td>
+                <td><input id="textBox3"type="number" disabled class="input-style"><span>%</span></td>
+            </tr>
+            <tr class="larger-text">
+                <td class="grayed" style="text-align: left;">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Suscipit, repellendus.</td>
+                <td><input id ="checkBox4"type="checkbox" class="checkbox-style"onclick="enableTextInput(`checkBox4`,`textBox4`)" ></td>
+                <td><input id="textBox4"type="number" disabled class="input-style"><span>%</span></td>
+            </tr>
+            <tr class="larger-text">
+                <td class="grayed" style="text-align: left;">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Suscipit, repellendus.</td>
+                <td><input id="checkBox5"type="checkbox" class="checkbox-style"onclick="enableTextInput(`checkBox5`,`textBox5`)" ></td>
+                <td><input id ="textBox5"type="number" disabled class="input-style"><span>%</span></td>
+            </tr>
+            <tr class="larger-text">
+                <td class="grayed" style="text-align: left;">I'm not sure</td>
+                <td><input id="checkBox6"type="checkbox" class="checkbox-style"onclick="enableTextInput(`checkBox6`,`textBox6`)" ></td>
+                <td><input id="textBox6"type="number" disabled class="input-style"><span>%</span></td>
+            </tr>
+            <tr class="larger-text">
+                <td class="grayed" style="text-align: left;"> Other (Please specify)<input type="text"
+                        style="border-radius: 0.5em;height:25px"></td>
+                <td><input id="checkBox7" type="checkbox" class="checkbox-style"onclick="enableTextInput(`checkBox7`,`textBox7`)" ></td>
+                <td><input id="textBox7"type="number" disabled class="input-style"><span>%</span></td>
+            </tr>
+            <tr class="larger-text">
+                <td class="grayed" style="text-align: left;">Number of methods</td>
+                <td><input type="number" disabled class="input-style"id="countChecked"></td>
+                <td><input type="number" disabled class="input-style"id="countSum"><span>%</span></td>
+            </tr>
+        </table>
+    </div>
+    <!-- TODO check box Enable input by check box  -->
+    <div class="containbutton" style="margin:25px"><button onclick="location.href = '../screen3/screen3.html'">Continue
+            >></button></div>
+    <script src="../jquery.js"></script>
+    <script type="text/javascript">
+        //for pregress bar
+        $(function () {
+            $('.Loading span').animate({
+                width: $('.Loading span').data('charge') + '%'
+            }, 1000);
+
+            var getCounter = parseInt($('.container i').text());
+
+            var MyCounter = setInterval(function () {
+                if (getCounter !== 101) {
+                    $('.container i').text(getCounter++ + '%');
+                } else {
+                    clearInterval(MyCounter);
+                    $('.container i').text('Finished');
+                };
+
+            }, 10);
+
+        });
+    </script>
+</body>
+
+</html>
